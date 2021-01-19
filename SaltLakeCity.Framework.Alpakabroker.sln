@@ -1,8 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Alpakabroker", "01 Alpakabroker", "{17DAF58C-19E3-4B2B-8593-032820C5FF60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltLakeCity.Framework.Alpakabroker", "src\SaltLakeCity.Framework.Alpakabroker\SaltLakeCity.Framework.Alpakabroker.csproj", "{8FB0C29B-D9E8-4197-A8FB-2DA956466C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FB0C29B-D9E8-4197-A8FB-2DA956466C90} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FB0C29B-D9E8-4197-A8FB-2DA956466C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB0C29B-D9E8-4197-A8FB-2DA956466C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB0C29B-D9E8-4197-A8FB-2DA956466C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB0C29B-D9E8-4197-A8FB-2DA956466C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
