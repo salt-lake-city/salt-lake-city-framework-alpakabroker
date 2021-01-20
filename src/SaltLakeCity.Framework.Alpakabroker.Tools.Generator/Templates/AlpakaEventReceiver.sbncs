@@ -1,0 +1,11 @@
+﻿{{ for using in Usings ~}}
+using {{ using }};
+{{ end ~}}
+
+namespace {{Namespace}}
+{
+    public abstract class {{ClassName}}
+    {
+       
+    }
+}
