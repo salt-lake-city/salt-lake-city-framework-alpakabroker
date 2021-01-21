@@ -1,6 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>SaltLakeCity.Framework.Alpakabroker.Abstractions</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Jan Heinsohn</Authors>
+    <Company>Jan Heinsohn</Company>
+    <PackageDescription>
+    </PackageDescription>
+    <RepositoryUrl>https://github.com/salt-lake-city/salt-lake-city-framework-alpakabroker</RepositoryUrl>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 

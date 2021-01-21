@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -47,13 +48,11 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator
 
                 var result = TemplateGenerator.Execute(templateString, alpakaEventModel);
 
-                context.ApplyDesignTimeFix(result, alpakaEventModel.ClassName);
-
                 return new GeneratedSource(result, alpakaEventModel.ClassName);
             }
             catch (Exception ex)
             {
-                return context.GenerateErrorSourceCode(ex, alpakaEventSyntax);
+                throw;
             }
         }
     }

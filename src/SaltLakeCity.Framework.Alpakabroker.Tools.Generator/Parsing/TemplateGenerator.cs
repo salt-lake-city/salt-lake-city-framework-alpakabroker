@@ -15,7 +15,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing
             if (template.HasErrors)
             {
                 var errors = string.Join(" | ", template.Messages.Select(x => x.Message));
-                throw new InvalidOperationException($"Template parse error: {template.Messages}");
+                throw new InvalidOperationException($"Template parse error: {errors}");
             }
 
             var result = template.Render(model, member => member.Name);
