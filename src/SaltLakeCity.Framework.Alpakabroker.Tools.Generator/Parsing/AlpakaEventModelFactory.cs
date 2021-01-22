@@ -16,7 +16,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing
             return new AlpakaEventModel()
             {
 
-                ClassName = $"{classSyntax.GetClassName()}ReceiverBase",
+                EventName = $"{classSyntax.GetClassName()}",
                 
                 Usings = root.GetUsings(),
 

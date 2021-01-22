@@ -4,7 +4,7 @@ using {{ using }};
 
 namespace {{Namespace}}
 {
-    public abstract class {{EventName}}ReceiverBase : EventReceiverBase<{{EventName}}>
+    public static class {{EventName}}Emitter
     {
        
     }

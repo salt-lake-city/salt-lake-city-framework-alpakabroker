@@ -4,7 +4,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing
 {
     public class AlpakaEventModel
     {
-        public string ClassName { get; set; }
+        public string EventName { get; set; }
 
         public string Namespace { get; set; }
         

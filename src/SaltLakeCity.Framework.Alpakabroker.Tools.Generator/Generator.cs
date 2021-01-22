@@ -41,7 +41,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator
             var templateString = ResourceReader.GetResource("AlpakaEventReceiver.sbncs");
 
             var result = TemplateGenerator.Execute(templateString, alpakaEventModel);
-            return new GeneratedSource(result, alpakaEventModel.ClassName);
+            return new GeneratedSource(result, alpakaEventModel.EventName);
         }
     }
 }

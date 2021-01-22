@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <PackageId>SaltLakeCity.Framework.Alpakabroker.Tools.Genrator</PackageId>
-        <Version>0.0.1</Version>
+        <PackageId>SaltLakeCity.Framework.Alpakabroker.Tools.Generator</PackageId>
+        <Version>0.0.2</Version>
         <Authors>Jan Heinsohn</Authors>
         <Company>Jan Heinsohn</Company>
         <PackageDescription>Generator für Implementierungen von Alpakabroker Events</PackageDescription>
@@ -20,6 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="Templates\AlpakaEventEmitter.sbncs" />
       <EmbeddedResource Include="Templates\AlpakaEventReceiver.sbncs" />
     </ItemGroup>
 
