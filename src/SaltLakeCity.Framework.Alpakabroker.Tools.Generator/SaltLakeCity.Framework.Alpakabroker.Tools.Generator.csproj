@@ -1,8 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>SaltLakeCity.Framework.Alpakabroker.Tools.Genrator</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Jan Heinsohn</Authors>
+        <Company>Jan Heinsohn</Company>
+        <PackageDescription>Generator für Implementierungen von Alpakabroker Events</PackageDescription>
+        <RepositoryUrl>https://github.com/salt-lake-city/salt-lake-city-framework-alpakabroker</RepositoryUrl>
         
+        <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild> <!-- Generates a package at build -->
         <IncludeBuildOutput>false</IncludeBuildOutput> <!-- Do not include the generator as a lib dependency -->	
         <LangVersion>9</LangVersion>
@@ -27,16 +33,25 @@
         <!-- Take a private dependency on Newtonsoft.Json (PrivateAssets=all) Consumers of this generator will not reference it.
      Set GeneratePathProperty=true so we can reference the binaries via the PKGNewtonsoft_Json property -->
         <PackageReference Include="Scriban" GeneratePathProperty="true" Version="2.1.2" PrivateAssets="all" />
+        <PackageReference Include="SaltLakeCity.Framework.Alpakabroker.Abstractions" GeneratePathProperty="true" Version="0.0.1" PrivateAssets="all" />
 
         <!-- Package the generator in the analyzer directory of the nuget package -->
         <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
 
-        <!-- Package the Newtonsoft.Json dependency alongside the generator assembly -->
-        <None Include="$(PkgScriban)\lib\netstandard2.0\*.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+        <None Include="$(PKGScriban)\lib\netstandard2.0\*.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+        <None Include="$(PKGSaltLakeCity_Framework_Alpakabroker_Abstractions)\lib\netstandard2.0\*.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     </ItemGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\SaltLakeCity.Framework.Alpakabroker.Abstractions\SaltLakeCity.Framework.Alpakabroker.Abstractions.csproj"  />
-    </ItemGroup>
+    <PropertyGroup>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        <GetTargetPathDependsOn>$(GetTargetPathDependsOn);GetDependencyTargetPaths</GetTargetPathDependsOn>
+    </PropertyGroup>
 
+    <Target Name="GetDependencyTargetPaths">
+        <ItemGroup>
+            <TargetPathWithTargetPlatformMoniker Include="$(PKGScriban)\lib\netstandard2.0\*.dll" IncludeRuntimeDependency="false" />
+            <TargetPathWithTargetPlatformMoniker Include="$(PKGSaltLakeCity_Framework_Alpakabroker_Abstractions)\lib\netstandard2.0\*.dll" IncludeRuntimeDependency="false" />
+        </ItemGroup>
+    </Target>
+    
 </Project>

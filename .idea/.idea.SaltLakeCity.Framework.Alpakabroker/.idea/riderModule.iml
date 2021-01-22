@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/.nuget/packages/saltlakecity.framework.alpakabroker.abstractions/0.0.1/lib/netstandard2.0/SaltLakeCity.Framework.Alpakabroker.Abstractions.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/scriban/2.1.2/lib/netstandard2.0/Scriban.dll" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />

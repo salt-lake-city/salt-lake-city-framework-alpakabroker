@@ -1,9 +1,5 @@
-using System;
-using System.Diagnostics;
-using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.Text;
 using SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing;
 using SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Tools;
 
@@ -22,7 +18,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator
                 {
                     var source = GenerateAlpakaEventReceiver(@event, sourceGenContext);
 
-                    context.AddSource(source.FileName, SourceText.From(source.SourceCode, Encoding.UTF8));
+                    context.AddSource(source.FileName, source.SourceCode);
                 }
             }
         }
@@ -40,20 +36,12 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator
         
         private GeneratedSource GenerateAlpakaEventReceiver(ClassDeclarationSyntax alpakaEventSyntax, SourceGeneratorContext<Generator> context)
         {
-            try
-            {
-                var alpakaEventModel = AlpakaEventModelFactory.From(alpakaEventSyntax, context.GeneratorExecutionContext.Compilation);
+            var alpakaEventModel = AlpakaEventModelFactory.From(alpakaEventSyntax, context.GeneratorExecutionContext.Compilation);
 
-                var templateString = ResourceReader.GetResource("AlpakaEventReceiver.sbncs");
+            var templateString = ResourceReader.GetResource("AlpakaEventReceiver.sbncs");
 
-                var result = TemplateGenerator.Execute(templateString, alpakaEventModel);
-
-                return new GeneratedSource(result, alpakaEventModel.ClassName);
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
+            var result = TemplateGenerator.Execute(templateString, alpakaEventModel);
+            return new GeneratedSource(result, alpakaEventModel.ClassName);
         }
     }
 }

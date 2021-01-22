@@ -6,6 +6,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Hello World!");
         }
     }
