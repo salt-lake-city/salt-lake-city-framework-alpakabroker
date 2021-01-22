@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.301
+        dotnet-version: 5.1.101
 
     - name: Add Source
       run: dotnet nuget add source https://nuget.pkg.github.com/salt-lake-city/index.json -n github -u NyghtX -p ${{ secrets.API_KEY }} --store-password-in-clear-text
