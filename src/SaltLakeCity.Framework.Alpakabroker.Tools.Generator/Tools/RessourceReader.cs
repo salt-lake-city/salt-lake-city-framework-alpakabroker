@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Tools
 {
     internal class ResourceReader
     {
-        public static string GetResource<TAssembly>(string endWith) => GetResource(endWith, typeof(TAssembly));
-
         public static string GetResource(string endWith, Type assemblyType = null)
         {
             var assembly = GetAssembly(assemblyType);
 
-            var resources = assembly.GetManifestResourceNames().Where(r => r.EndsWith(endWith));
-
+            var resources = assembly.GetManifestResourceNames().Where(r => r.EndsWith(endWith)).ToList();
+            
             if (!resources.Any()) throw new InvalidOperationException($"There is no resources that ends with '{endWith}'");
-            if (resources.Count() > 1) throw new InvalidOperationException($"There is more then one resource that ends with '{endWith}'");
+            if (resources.Count > 1) throw new InvalidOperationException($"There is more then one resource that ends with '{endWith}'");
 
             var resourceName = resources.Single();
 

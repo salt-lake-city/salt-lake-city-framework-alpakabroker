@@ -8,7 +8,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing
             FileName = fileName;
         }
 
-        public string SourceCode { get; set; }
-        public string FileName { get; set; }
+        public string SourceCode { get; }
+        public string FileName { get; }
     }
 }

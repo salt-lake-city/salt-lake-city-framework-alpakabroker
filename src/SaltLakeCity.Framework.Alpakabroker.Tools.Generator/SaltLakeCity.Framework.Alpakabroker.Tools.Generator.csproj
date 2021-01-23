@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>SaltLakeCity.Framework.Alpakabroker.Tools.Generator</PackageId>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <Authors>Jan Heinsohn</Authors>
         <Company>Jan Heinsohn</Company>
         <PackageDescription>Generator für Implementierungen von Alpakabroker Events</PackageDescription>
@@ -16,12 +16,8 @@
     
 
     <ItemGroup>
-      <None Remove="Templates\AlpakaEventReceiver.sbncs" />
-    </ItemGroup>
-
-    <ItemGroup>
       <EmbeddedResource Include="Templates\AlpakaEventEmitter.sbncs" />
-      <EmbeddedResource Include="Templates\AlpakaEventReceiver.sbncs" />
+      <EmbeddedResource Include="Templates\AlpakaEventReceiverBase.sbncs" />
     </ItemGroup>
 
     <ItemGroup>

@@ -7,11 +7,10 @@
     </PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\SaltLakeCity.Framework.Alpakabroker.Abstractions\SaltLakeCity.Framework.Alpakabroker.Abstractions.csproj" />
+		<ProjectReference Include="..\SaltLakeCity.Framework.Alpakabroker.Tools.Generator\SaltLakeCity.Framework.Alpakabroker.Tools.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+		<ProjectReference Include="..\SaltLakeCity.Framework.Alpakabroker\SaltLakeCity.Framework.Alpakabroker.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <PackageReference Include="SaltLakeCity.Framework.Alpakabroker.Tools.Genrator" Version="0.0.1" OutputItemType="Analyzer" ReferenceOutputAssembly="false"  />
-	</ItemGroup>
+
     
 </Project>
