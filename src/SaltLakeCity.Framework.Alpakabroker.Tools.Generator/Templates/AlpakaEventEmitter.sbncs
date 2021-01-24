@@ -6,6 +6,9 @@ namespace {{Namespace}}
 {
     public static class {{EventName}}Emitter
     {
-       
+       public static void Emit{{EventName}}({{EventName}} e) 
+       {
+            
+       }
     }
 }
