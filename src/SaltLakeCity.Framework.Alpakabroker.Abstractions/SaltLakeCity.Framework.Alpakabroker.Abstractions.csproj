@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>SaltLakeCity.Framework.Alpakabroker.Abstractions</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Jan Heinsohn</Authors>
     <Company>Jan Heinsohn</Company>
     <PackageDescription>
