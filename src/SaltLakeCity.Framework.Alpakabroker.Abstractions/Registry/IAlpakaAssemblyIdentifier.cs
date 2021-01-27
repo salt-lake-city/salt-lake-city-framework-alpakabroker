@@ -8,6 +8,6 @@ namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.Registry
         /// Gibt die Liste der in der Assembly vorhandenen AlpakaEventTypeComposites wieder
         /// </summary>
         /// <returns></returns>
-        IEnumerable<AlpakaEventTypeComosite> GetAlpakaEventTypeComosites();
+        IEnumerable<AlpakaEventTypeComposite> GetAlpakaEventTypeComposites();
     }
 }

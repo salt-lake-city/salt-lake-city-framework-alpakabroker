@@ -1,0 +1,16 @@
+﻿{{ for using in Usings ~}}
+using {{ using }};
+{{ end ~}}
+
+namespace {{Namespace}}
+{
+    public class AlpakaAssemblyIdentifier : IAlpakaAssemblyIdentifier
+    {
+        public IEnumerable<AlpakaEventTypeComposite> GetAlpakaEventTypeComposites() 
+        {
+            {{ for alpakaEvent in AlpakaEvents ~}}
+             yield return new AlpakaEventTypeComposite(typeof({{alpakaEvent}}), typeof({{alpakaEvent}}ReceiverBase), typeof({{alpakaEvent}}Emitter));
+            {{ end ~}}
+        }
+    }
+}

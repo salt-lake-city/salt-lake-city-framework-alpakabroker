@@ -1,4 +1,4 @@
-namespace SaltLakeCity.Framework.Alpakabroker.EventReceiver
+namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.EventReceiver
 {
     public abstract class EventReceiverBase<TEvent>
     {

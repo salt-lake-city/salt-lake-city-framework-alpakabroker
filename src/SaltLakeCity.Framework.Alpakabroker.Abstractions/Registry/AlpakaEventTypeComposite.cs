@@ -2,9 +2,9 @@ using System;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.Registry
 {
-    public class AlpakaEventTypeComosite
+    public class AlpakaEventTypeComposite
     {
-        public AlpakaEventTypeComosite(Type alpakaEventType, Type alpakaEventReceiverBaseType, Type alpakaEventEmitterType)
+        public AlpakaEventTypeComposite(Type alpakaEventType, Type alpakaEventReceiverBaseType, Type alpakaEventEmitterType)
         {
             AlpakaEventType = alpakaEventType;
             AlpakaEventReceiverBaseType = alpakaEventReceiverBaseType;
