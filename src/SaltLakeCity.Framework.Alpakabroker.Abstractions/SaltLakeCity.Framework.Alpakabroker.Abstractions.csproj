@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <PackageId>SaltLakeCity.Framework.Alpakabroker.Abstractions</PackageId>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>Jan Heinsohn</Authors>
     <Company>Jan Heinsohn</Company>
     <PackageDescription>
     </PackageDescription>
     <RepositoryUrl>https://github.com/salt-lake-city/salt-lake-city-framework-alpakabroker</RepositoryUrl>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
 </Project>
