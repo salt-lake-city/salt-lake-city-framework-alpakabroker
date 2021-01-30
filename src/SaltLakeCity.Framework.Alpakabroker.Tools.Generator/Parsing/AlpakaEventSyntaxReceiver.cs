@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using SaltLakeCity.Framework.Alpakabroker.Abstractions.Attributes;
+using SaltLakeCity.Framework.Alpakabroker.Attributes;
 using SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Extensions;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing

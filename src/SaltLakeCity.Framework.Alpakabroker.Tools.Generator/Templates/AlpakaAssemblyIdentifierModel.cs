@@ -19,7 +19,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Templates
                 Namespace = ns,
                 Usings = new List<string>(namespaces)
                 {
-                    "SaltLakeCity.Framework.Alpakabroker.Abstractions.Registry",
+                    "SaltLakeCity.Framework.Alpakabroker.Registry",
                     "System.Collections.Generic"
                 },
                 AlpakaEvents = alpakaEventModels.Select(x => x.EventName).ToList()

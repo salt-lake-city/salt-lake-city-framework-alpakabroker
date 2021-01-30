@@ -14,7 +14,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator
         public void Execute(GeneratorExecutionContext context)
         {
             // check that the users compilation references the expected library 
-            if (!context.Compilation.ReferencedAssemblyNames.Any(ai => ai.Name.Equals("SaltLakeCity.Framework.Alpakabroker.Abstractions", StringComparison.OrdinalIgnoreCase)))
+            if (!context.Compilation.ReferencedAssemblyNames.Any(ai => ai.Name.Equals("SaltLakeCity.Framework.Alpakabroker", StringComparison.OrdinalIgnoreCase)))
             {
                 //context.ReportDiagnostic();
             }
