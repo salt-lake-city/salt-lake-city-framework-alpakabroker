@@ -1,6 +1,6 @@
 using System;
 
-namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.Registry
+namespace SaltLakeCity.Framework.Alpakabroker.Registry
 {
     public class AlpakaEventTypeComposite
     {

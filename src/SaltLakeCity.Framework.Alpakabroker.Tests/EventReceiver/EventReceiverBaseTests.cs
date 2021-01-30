@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using SaltLakeCity.Framework.Alpakabroker.Abstractions.EventReceiver;
+using SaltLakeCity.Framework.Alpakabroker.EventReceiver;
 using Xunit;
 
-namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.Tests.EventReceiver
+namespace SaltLakeCity.Framework.Alpakabroker.Tests.EventReceiver
 {
     public class EventReceiverBaseTests
     {

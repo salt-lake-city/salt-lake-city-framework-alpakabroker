@@ -1,4 +1,4 @@
-namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.EventReceiver
+namespace SaltLakeCity.Framework.Alpakabroker.EventReceiver
 {
     public interface IEventReceiver
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.EventReceiver
+namespace SaltLakeCity.Framework.Alpakabroker.EventReceiver
 {
     public class InvalidEventTypeException : Exception
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.Attributes
+namespace SaltLakeCity.Framework.Alpakabroker.Attributes
 {
     /// <summary>
     /// Attribut, mit dem Events gekennzeichnet und als solche erkannt werden

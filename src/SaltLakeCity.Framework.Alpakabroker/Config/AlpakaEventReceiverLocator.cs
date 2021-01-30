@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
-using SaltLakeCity.Framework.Alpakabroker.Abstractions.EventReceiver;
+using SaltLakeCity.Framework.Alpakabroker.EventReceiver;
 using SaltLakeCity.Framework.Core;
 
-namespace SaltLakeCity.Framework.Alpakabroker.Abstractions.Config
+namespace SaltLakeCity.Framework.Alpakabroker.Config
 {
     public static class AlpakaEventReceiverLocator
     {
