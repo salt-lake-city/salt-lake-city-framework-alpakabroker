@@ -1,5 +1,4 @@
-﻿
-using SaltLakeCity.Framework.Alpakabroker.Abstractions;
+﻿using SaltLakeCity.Framework.Alpakabroker.Abstractions.Attributes;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Example.Events.Connection
 {

@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+        <TargetFramework>netstandard2.1</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="SaltLakeCity.Framework.Alpakabroker.Abstractions" Version="0.0.1" />
+      <PackageReference Include="SaltLakeCity.Framework.Alpakabroker.Abstractions" Version="0.0.5" />
+      <PackageReference Include="SaltLakeCity.Framework.Core" Version="0.0.3" />
+      <PackageReference Include="SaltLakeCity.Framework.Logging" Version="1.0.1" />
     </ItemGroup>
+    
 
 </Project>

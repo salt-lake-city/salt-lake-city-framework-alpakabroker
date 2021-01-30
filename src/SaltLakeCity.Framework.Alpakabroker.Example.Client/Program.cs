@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Reflection;
+using Microsoft.Extensions.DependencyInjection;
+using SaltLakeCity.Framework.Alpakabroker.Abstractions.Config;
+using SaltLakeCity.Framework.Alpakabroker.Registry;
+using SaltLakeCity.Framework.Core;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
 {
@@ -6,7 +11,11 @@ namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
     {
         static void Main(string[] args)
         {
+            var sc = new ServiceCollection();
+
+            AlpakaEventReceiverLocator.Locate(new AssemblyProxy(Assembly.GetExecutingAssembly()), sc);
             
+            AlpakaEventRegistry.Init(sc.BuildServiceProvider());
             Console.WriteLine("Hello World!");
         }
     }
