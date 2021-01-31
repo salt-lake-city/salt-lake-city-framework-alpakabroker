@@ -1,6 +1,8 @@
+using System;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using SaltLakeCity.Framework.Alpakabroker.EventReceiver;
+using SaltLakeCity.Framework.Alpakabroker.Registry;
 using SaltLakeCity.Framework.Core;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Config
@@ -15,8 +17,15 @@ namespace SaltLakeCity.Framework.Alpakabroker.Config
             foreach (var type in eventReceiver)
                 serviceCollection.AddSingleton(typeof(IEventReceiver), type);
 
-            return serviceCollection;
+            serviceCollection.AddSingleton<IAlpakaEventRegistry, AlpakaEventRegistryImplementation>();
 
+            return serviceCollection;
+        }
+
+        public static IServiceProvider ConfigureAlpakaBroker(this IServiceProvider serviceProvider)
+        {
+            AlpakaEventRegistry.EventRegistry = serviceProvider.GetService<IAlpakaEventRegistry>();
+            return serviceProvider;
         }
     }
 }
