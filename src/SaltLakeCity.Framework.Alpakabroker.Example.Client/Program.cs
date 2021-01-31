@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
-using SaltLakeCity.Framework.Alpakabroker.Abstractions.Config;
+using SaltLakeCity.Framework.Alpakabroker.Config;
 using SaltLakeCity.Framework.Alpakabroker.Registry;
 using SaltLakeCity.Framework.Core;
 

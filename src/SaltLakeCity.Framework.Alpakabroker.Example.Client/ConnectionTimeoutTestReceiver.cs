@@ -4,7 +4,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
 {
     public class ConnectionTimeoutTestReceiver : ConnectionTimeoutEventReceiverBase
     {
-        public override void OnEvent(ConnectionTimeoutEvent @event)
+        protected override void OnEvent(ConnectionTimeoutEvent @event)
         {
             
         }

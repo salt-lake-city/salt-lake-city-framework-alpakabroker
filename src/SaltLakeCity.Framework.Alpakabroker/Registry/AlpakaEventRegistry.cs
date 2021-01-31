@@ -19,12 +19,10 @@ namespace SaltLakeCity.Framework.Alpakabroker.Registry
         {
             Logger.Information("AlpakaEventBroker Registry wird initialisiert..", "43A6189F-6DB0-41FD-8BAC-BDE1B913892A");
             
-            // => Event Receiver Types laden
-            var eventReceiverTypes = AlpakaEventReceiverLocator.GetLocatedEventReceivers();
             
             // => Event Receiver Instanzen aus Provider ziehen
-            foreach (var eventReceiverType in eventReceiverTypes)
-                AddEventReceiver((IEventReceiver) serviceProvider.GetService(eventReceiverType));
+            //foreach (var eventReceiverType in eventReceiverTypes)
+              //  AddEventReceiver((IEventReceiver) serviceProvider.GetService(eventReceiverType));
             
             Logger.Information("AlpakaEventBroker Registry wurde initialisiert.", "E639CE11-E132-4B28-927F-FC132C159453");
 

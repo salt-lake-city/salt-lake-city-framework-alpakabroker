@@ -2,7 +2,6 @@
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.7.1/build/netcoreapp2.1" />
-    <content url="file://$USER_HOME$/.nuget/packages/saltlakecity.framework.alpakabroker/0.0.1/lib/netstandard2.1/SaltLakeCity.Framework.Alpakabroker.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/scriban/2.1.2/lib/netstandard2.0/Scriban.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.3/build/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.3/build/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll" />

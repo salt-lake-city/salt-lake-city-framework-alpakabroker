@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>SaltLakeCity.Framework.Alpakabroker.Tools.Generator</PackageId>
-        <Version>0.0.5</Version>
+        <Version>0.0.6</Version>
         <Authors>Jan Heinsohn</Authors>
         <Company>Jan Heinsohn</Company>
         <PackageDescription>Generator für Implementierungen von Alpakabroker Events</PackageDescription>
