@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaltLakeCity.Framework.Alpa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltLakeCity.Framework.Alpakabroker.Tests", "src\SaltLakeCity.Framework.Alpakabroker.Tests\SaltLakeCity.Framework.Alpakabroker.Tests.csproj", "{57D39541-7C20-4F94-BEE6-119B53A74A4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltLakeCity.Framework.Alpakabroker.Example.Client", "src\SaltLakeCity.Framework.Alpakabroker.Example.Client\SaltLakeCity.Framework.Alpakabroker.Example.Client.csproj", "{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{57D39541-7C20-4F94-BEE6-119B53A74A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D39541-7C20-4F94-BEE6-119B53A74A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D39541-7C20-4F94-BEE6-119B53A74A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{1EC722FC-DF2D-4B19-84E8-395314F705C5} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
 		{2D145E20-FD38-4CFE-92D7-069FD7375FCA} = {1EC722FC-DF2D-4B19-84E8-395314F705C5}
 		{57D39541-7C20-4F94-BEE6-119B53A74A4E} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
+		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D} = {A5044703-536C-4D47-9D76-C12F6F0F77A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D27A471-32F8-4A03-9110-2034F1AC2392}
