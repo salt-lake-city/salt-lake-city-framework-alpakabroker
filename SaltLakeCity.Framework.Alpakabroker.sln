@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Example", "03 Example", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaltLakeCity.Framework.Alpakabroker.Example.Events", "src\SaltLakeCity.Framework.Alpakabroker.Example.Events\SaltLakeCity.Framework.Alpakabroker.Example.Events.csproj", "{2BE8AD7C-B1A6-4249-97D5-1DFF840F357C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaltLakeCity.Framework.Alpakabroker.Example.Client", "src\SaltLakeCity.Framework.Alpakabroker.Example.Client\SaltLakeCity.Framework.Alpakabroker.Example.Client.csproj", "{BE6EF86D-576E-4769-89E5-52259F765834}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{1EC722FC-DF2D-4B19-84E8-395314F705C5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaltLakeCity.Framework.Alpakabroker.Tools.Generator", "src\SaltLakeCity.Framework.Alpakabroker.Tools.Generator\SaltLakeCity.Framework.Alpakabroker.Tools.Generator.csproj", "{2D145E20-FD38-4CFE-92D7-069FD7375FCA}"
@@ -33,10 +31,6 @@ Global
 		{2BE8AD7C-B1A6-4249-97D5-1DFF840F357C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BE8AD7C-B1A6-4249-97D5-1DFF840F357C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BE8AD7C-B1A6-4249-97D5-1DFF840F357C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE6EF86D-576E-4769-89E5-52259F765834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE6EF86D-576E-4769-89E5-52259F765834}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE6EF86D-576E-4769-89E5-52259F765834}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE6EF86D-576E-4769-89E5-52259F765834}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D145E20-FD38-4CFE-92D7-069FD7375FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D145E20-FD38-4CFE-92D7-069FD7375FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D145E20-FD38-4CFE-92D7-069FD7375FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,7 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8FB0C29B-D9E8-4197-A8FB-2DA956466C90} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
 		{2BE8AD7C-B1A6-4249-97D5-1DFF840F357C} = {A5044703-536C-4D47-9D76-C12F6F0F77A1}
-		{BE6EF86D-576E-4769-89E5-52259F765834} = {A5044703-536C-4D47-9D76-C12F6F0F77A1}
 		{1EC722FC-DF2D-4B19-84E8-395314F705C5} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
 		{2D145E20-FD38-4CFE-92D7-069FD7375FCA} = {1EC722FC-DF2D-4B19-84E8-395314F705C5}
 		{57D39541-7C20-4F94-BEE6-119B53A74A4E} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
