@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>SaltLakeCity.Framework.Alpakabroker.Tools.Generator</PackageId>
-        <Version>0.0.6</Version>
+        <Version>0.0.7</Version>
         <Authors>Jan Heinsohn</Authors>
         <Company>Jan Heinsohn</Company>
         <PackageDescription>Generator für Implementierungen von Alpakabroker Events</PackageDescription>
@@ -31,7 +31,7 @@
         <!-- Take a private dependency on Newtonsoft.Json (PrivateAssets=all) Consumers of this generator will not reference it.
      Set GeneratePathProperty=true so we can reference the binaries via the PKGNewtonsoft_Json property -->
         <PackageReference Include="Scriban" GeneratePathProperty="true" Version="2.1.2" PrivateAssets="all" />
-        <PackageReference Include="SaltLakeCity.Framework.AlpakaBroker" GeneratePathProperty="true" Version="0.0.2" PrivateAssets="all" />
+        <PackageReference Include="SaltLakeCity.Framework.AlpakaBroker" GeneratePathProperty="true" Version="0.0.3" PrivateAssets="all" />
 
         <!-- Package the generator in the analyzer directory of the nuget package -->
         <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />

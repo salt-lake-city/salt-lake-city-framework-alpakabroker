@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using SaltLakeCity.Framework.Alpakabroker.Config;
+using SaltLakeCity.Framework.Alpakabroker.Example.Events.Connection;
+using SaltLakeCity.Framework.Core;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
 {
@@ -8,11 +11,14 @@ namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
     {
         static void Main(string[] args)
         {
-            var sc = new ServiceCollection();
-
-            sc.ConfigureAlpakaBroker();
+            var sp = new ServiceCollection()
+                .ConfigureAlpakaBroker()
+                .ConfigureAlpakaBrokerForAssembly(new AssemblyProxy(Assembly.GetExecutingAssembly()))
+                .BuildServiceProvider()
+                .ConfigureAlpakaBroker();
             
             
+            ConnectionTimeoutEventEmitter.EmitConnectionTimeoutEvent(new ConnectionTimeoutEvent());
             Console.WriteLine("Hello World!");
         }
     }
