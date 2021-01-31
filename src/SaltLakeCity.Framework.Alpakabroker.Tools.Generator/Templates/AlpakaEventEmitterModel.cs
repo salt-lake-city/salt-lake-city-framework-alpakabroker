@@ -17,7 +17,10 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Templates
             {
                 EventName = model.EventName,
                 Namespace = model.Namespace,
-                Usings = model.Usings
+                Usings = new List<string>(model.Usings)
+                {
+                    "SaltLakeCity.Framework.Alpakabroker.Registry"
+                }
             };
         }
     }

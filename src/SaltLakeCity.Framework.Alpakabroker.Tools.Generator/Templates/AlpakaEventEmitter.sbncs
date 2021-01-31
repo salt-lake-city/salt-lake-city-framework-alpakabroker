@@ -8,7 +8,7 @@ namespace {{Namespace}}
     {
        public static void Emit{{EventName}}({{EventName}} e) 
        {
-            
+            AlpakaEventRegistry.Emit(e);
        }
     }
 }

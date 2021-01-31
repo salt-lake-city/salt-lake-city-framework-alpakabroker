@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using SaltLakeCity.Framework.Alpakabroker.Config;
 
 namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
 {
@@ -8,6 +9,10 @@ namespace SaltLakeCity.Framework.Alpakabroker.Example.Client
         static void Main(string[] args)
         {
             var sc = new ServiceCollection();
+
+            sc.ConfigureAlpakaBroker();
+            
+            
             Console.WriteLine("Hello World!");
         }
     }
