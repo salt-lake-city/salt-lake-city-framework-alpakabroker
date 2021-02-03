@@ -28,9 +28,6 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing
         public static GeneratedSource GenerateAlpakaEventEventReceiverBase(AlpakaEventModel alpakaEventModel) =>
             new(Execute(_alpakaEventReceiverBaseTemplate, AlpakaEventReceiverBaseModel.From(alpakaEventModel)),
                 $"{alpakaEventModel.Namespace}.{alpakaEventModel.EventName}EventReceiverBase");
-        
-        public static GeneratedSource GenerateAlpakaAssemblyIdentifier(AlpakaAssemblyIdentifierModel model) => new(Execute(_alpakaAssemblyIdentifierTemplate, model),
-            $"AssemblyIdentifier");
 
 
         private static string Execute(string templateString, object model)
