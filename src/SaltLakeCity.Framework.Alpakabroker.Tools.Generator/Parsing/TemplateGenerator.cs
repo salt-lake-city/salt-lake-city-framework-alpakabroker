@@ -12,13 +12,11 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator.Parsing
     {
         private static string _alpakaEventReceiverBaseTemplate;
         private static string _alpakaEventEmitterTemplate;
-        private static string _alpakaAssemblyIdentifierTemplate;
 
         static TemplateGenerator()
         {
             _alpakaEventReceiverBaseTemplate = ResourceReader.GetResource("AlpakaEventReceiverBase.sbncs");
             _alpakaEventEmitterTemplate = ResourceReader.GetResource("AlpakaEventEmitter.sbncs");
-            _alpakaAssemblyIdentifierTemplate = ResourceReader.GetResource("AlpakaAssemblyIdentifier.sbncs");
         }
 
         public static GeneratedSource GenerateAlpakaEventEmitter(AlpakaEventModel alpakaEventModel) =>
