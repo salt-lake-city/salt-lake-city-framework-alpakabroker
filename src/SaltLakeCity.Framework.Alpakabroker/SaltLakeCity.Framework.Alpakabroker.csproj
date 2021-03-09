@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>SaltLakeCity.Framework.Alpakabroker</PackageId>
-        <Version>0.0.3</Version>
+        <Version>0.0.4</Version>
         <Authors>Jan Heinsohn</Authors>
         <Company>Jan Heinsohn</Company>
         <PackageDescription>
@@ -14,7 +14,7 @@
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
       <PackageReference Include="SaltLakeCity.Framework.Core" Version="0.0.3" />
-      <PackageReference Include="SaltLakeCity.Framework.Logging" Version="1.0.1" />
+      <PackageReference Include="SaltLakeCity.Framework.Logging" Version="2.0.1" />
     </ItemGroup>
     
 

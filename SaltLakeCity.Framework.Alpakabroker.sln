@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltLakeCity.Framework.Alpa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltLakeCity.Framework.Alpakabroker.Example.Client", "src\SaltLakeCity.Framework.Alpakabroker.Example.Client\SaltLakeCity.Framework.Alpakabroker.Example.Client.csproj", "{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Remote", "02 Remote", "{39AA4014-3715-4AE6-9FFA-837903E52C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltLakeCity.Framework.Alpakabroker.Remote", "src\SaltLakeCity.Framework.Alpakabroker.Remote\SaltLakeCity.Framework.Alpakabroker.Remote.csproj", "{46369AA7-969A-45E4-AD5B-275F02527B6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46369AA7-969A-45E4-AD5B-275F02527B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46369AA7-969A-45E4-AD5B-275F02527B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46369AA7-969A-45E4-AD5B-275F02527B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46369AA7-969A-45E4-AD5B-275F02527B6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +64,7 @@ Global
 		{2D145E20-FD38-4CFE-92D7-069FD7375FCA} = {1EC722FC-DF2D-4B19-84E8-395314F705C5}
 		{57D39541-7C20-4F94-BEE6-119B53A74A4E} = {17DAF58C-19E3-4B2B-8593-032820C5FF60}
 		{5E03B3EC-3B06-44DB-89BA-49DD0C44031D} = {A5044703-536C-4D47-9D76-C12F6F0F77A1}
+		{46369AA7-969A-45E4-AD5B-275F02527B6D} = {39AA4014-3715-4AE6-9FFA-837903E52C58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D27A471-32F8-4A03-9110-2034F1AC2392}

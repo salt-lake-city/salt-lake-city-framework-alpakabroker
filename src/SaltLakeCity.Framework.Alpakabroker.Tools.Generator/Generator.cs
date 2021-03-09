@@ -15,7 +15,7 @@ namespace SaltLakeCity.Framework.Alpakabroker.Tools.Generator
             {
                 //context.ReportDiagnostic();
             }
-            
+
             using var sourceGenContext = SourceGeneratorContext<Generator>.Create(context);
             if (context.SyntaxReceiver is not AlpakaEventSyntaxReceiver actorSyntaxReciver) return;
 
