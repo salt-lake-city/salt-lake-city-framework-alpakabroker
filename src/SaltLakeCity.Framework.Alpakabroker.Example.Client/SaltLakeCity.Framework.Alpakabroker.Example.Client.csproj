@@ -11,7 +11,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
-      <PackageReference Include="SaltLakeCity.Framework.Alpakabroker" Version="0.0.3" />
+      <PackageReference Include="SaltLakeCity.Framework.Alpakabroker" Version="0.0.4" />
     </ItemGroup>
 
 </Project>
